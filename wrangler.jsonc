@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "api-floragen",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-05-07",
+
+  // "compatibility_flags": [
+  //   "nodejs_compat"
+  // ],
+  "vars": {
+    "GEMINI_API_KEY" : "AIzaSyBMIjyKAwyZx3CP8inkckvcoP_LhriYKck"
+  },
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "MY_KV_NAMESPACE",
+  //     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  //   }
+  // ],
+  // "r2_buckets": [
+  //   {
+  //     "binding": "MY_BUCKET",
+  //     "bucket_name": "my-bucket"
+  //   }
+  // ],
+   "d1_databases": [
+     {
+       "binding": "DB",
+       "database_name": "api-floragen-db",
+       "database_id": "167a9c80-08e4-489e-8e09-c6761c099674",
+       "migrations_dir" : "./migrations"
+     }
+ ]
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}
